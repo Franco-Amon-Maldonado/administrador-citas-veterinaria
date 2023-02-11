@@ -86,7 +86,7 @@ function Formulario({pacientes, setPacientes, paciente, setPaciente}) {
             objPacientes.id = paciente.id
             const pacienteAct = pacientes.map(pacienteState => pacienteState.id === paciente.id ? objPacientes : pacienteState)
             setPacientes(pacienteAct)
-
+           
             //Se limpia de memoria el paciente
             setPaciente({})
         }else{
